@@ -1,0 +1,4 @@
+23:27:35.638572 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/bin
+23:27:35.662761 git.c:476               trace: built-in: git push -u origin main --force
+23:27:35.662761 run-command.c:668       trace: run_command: unset GIT_PREFIX; ssh git@github.com 'git-receive-pack '\''YeabD/Fluent.git'\'''
+23:27:35.662761 run-command.c:929       trace: start_command: ssh git@github.com 'git-receive-pack '\''YeabD/Fluent.git'\'''
