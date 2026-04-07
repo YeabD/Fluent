@@ -1,3 +1,4 @@
+
 import Button from "./Button";
 import Image from "next/image";
 
@@ -23,7 +24,7 @@ export default function CourseCard({ course }) {
                 </p>
                 <div className="flex justify-between mt-3 text-sm text-gray-700">
                     <span><p className="text-gray-600 font-bold font-serif">Rating :</p>⭐ {course.rating}</span>
-                    <span><p className="text-gray-600 font-bold font-serif">Duratiion :</p>{course.duration}</span>
+                    <span><p className="text-gray-600 font-bold font-serif">Duration :</p>{course.duration}</span>
                 </div>
                 <div className="flex justify-between items-center mt-4">
 
