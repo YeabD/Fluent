@@ -71,7 +71,7 @@ export default function LandingPage() {
                     Browse all courses and take your skills to the next level.
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-6 pb-10">
                     <Link href="/courses">
                         <Button text="Explore Courses" />
                     </Link>
