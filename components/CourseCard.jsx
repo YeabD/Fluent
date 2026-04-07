@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function CourseCard({ course }) {
     return (
         <div className="bg-white rounded-xl shadow-md overflow-hidden 
-                    hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col h-full">
 
 
             <Image
@@ -15,18 +15,19 @@ export default function CourseCard({ course }) {
                 height={200}
                 className="w-full h-40 object-cover"
             />
-            <div className="p-4">
+            <div className="p-4 flex flex-col flex-grow">
+
                 <h2 className="text-lg font-semibold text-gray-800">
                     {course.title}
                 </h2>
-                <p className="text-sm text-gray-600 mt-2">
+                <p className="text-sm text-gray-600 mt-2 line-clamp-2">
                     {course.shortDescription}
                 </p>
                 <div className="flex justify-between mt-3 text-sm text-gray-700">
                     <span><p className="text-gray-600 font-bold font-serif">Rating :</p>⭐ {course.rating}</span>
                     <span><p className="text-gray-600 font-bold font-serif">Duration :</p>{course.duration}</span>
                 </div>
-                <div className="flex justify-between items-center mt-4">
+                <div className="flex justify-between items-center mt-auto">
 
                     <span className="text-blue-600 font-bold">
                         <p className="text-gray-600 font-serif">Price :</p>${course.price}
@@ -37,8 +38,8 @@ export default function CourseCard({ course }) {
 
 
                 </div>
-
             </div>
         </div>
+
     );
 }
