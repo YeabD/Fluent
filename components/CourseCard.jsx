@@ -1,6 +1,6 @@
 import Button from "./Button";
 import Image from "next/image";
-import { courses } from "@/data/courses";
+
 export default function CourseCard({ course }) {
     return (
         <div className="bg-white rounded-xl shadow-md overflow-hidden 
