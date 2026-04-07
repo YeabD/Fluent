@@ -1,3 +1,4 @@
+
 import Button from "../components/Button";
 import Link from "next/link";
 import { courses } from "../data/courses";
@@ -76,9 +77,6 @@ export default function LandingPage() {
                     </Link>
                 </div>
             </section>
-            <footer className="mt-20 py-6 text-center text-gray-500 text-sm">
-                © 2026 Fluent. All rights reserved.
-            </footer>
         </div >
     );
 }
